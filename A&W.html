@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A&W Agency creates bold graphic designs, YouTube thumbnails, and product advertisements for brands and creators.">
+<title>A&W Agency — Design That Gets Noticed</title>
+<style>
+:root{--bg:#08090d;--panel:#11131b;--gold:#f4c95d;--gold2:#ffdf8a;--text:#f6f7fb;--muted:#a8adbd;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#25203a 0,transparent 35%),var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--line)}
+.logo{font-size:1.25rem;font-weight:900;letter-spacing:.08em}.logo span{color:var(--gold)}
+.navlinks{display:flex;gap:24px;color:var(--muted);font-size:.94rem}.navlinks a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#15120a;font-weight:800;padding:13px 20px;border-radius:12px;transition:.2s;border:0;cursor:pointer}.btn:hover{transform:translateY(-2px);background:var(--gold2)}.btn.outline{background:transparent;color:var(--text);border:1px solid #5b543e}.btn.outline:hover{border-color:var(--gold);color:var(--gold)}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding:76px 0 72px}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--gold);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 14px var(--gold)}
+h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.02;letter-spacing:-.055em;margin:20px 0}h1 em{font-style:normal;color:var(--gold)}.lead{font-size:1.1rem;color:var(--muted);max-width:540px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.micro{font-size:.85rem;color:var(--muted);margin-top:18px}
+.artboard{min-height:380px;position:relative;border:1px solid rgba(244,201,93,.28);border-radius:28px;overflow:hidden;background:linear-gradient(140deg,#22253b,#10121a 62%,#272016);display:flex;align-items:center;justify-content:center;padding:28px;box-shadow:0 25px 90px #0008}.artboard:before,.artboard:after{content:"";position:absolute;border:1px solid rgba(244,201,93,.25);border-radius:50%;width:320px;height:320px}.artboard:after{width:230px;height:230px}.poster{position:relative;z-index:1;width:100%;max-width:390px;aspect-ratio:4/3;border-radius:18px;background:linear-gradient(145deg,#0b111c,#22374b 58%,#11151c);border:1px solid #ffffff26;padding:24px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(-3deg);box-shadow:0 24px 50px #0009}.poster-top{display:flex;justify-content:space-between;align-items:center;font-size:.7rem;letter-spacing:.14em;color:#d9e2eb}.poster-tag{border:1px solid var(--gold);color:var(--gold);padding:5px 8px;border-radius:99px;font-size:.65rem}.shoe{font-size:6.8rem;text-align:center;filter:drop-shadow(0 14px 10px #0008);transform:rotate(-16deg);line-height:1.15}.poster h2{font-size:2rem;line-height:1;margin:0;letter-spacing:-.04em}.poster h2 span{color:var(--gold)}.poster-foot{display:flex;align-items:center;justify-content:space-between;font-size:.75rem;color:#d8e0e8}.price{font-weight:900;color:#fff;background:#e34c3e;padding:7px 11px;border-radius:7px}
+section{padding:64px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 34px}.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:10px 0}.section-head p{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:26px;border-radius:20px;background:linear-gradient(160deg,#151722,#0f1016);border:1px solid var(--line)}.icon{width:48px;height:48px;border-radius:14px;background:#f4c95d18;border:1px solid #f4c95d55;display:grid;place-items:center;color:var(--gold);font-size:1.35rem}.card h3{margin:18px 0 8px}.card p{color:var(--muted);margin:0}.portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.sample{border-radius:18px;overflow:hidden;min-height:210px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line)}.sample small{letter-spacing:.14em;font-weight:800}.sample h3{font-size:1.75rem;line-height:1.05;margin:14px 0}.sample p{margin:0;font-size:.85rem;color:#e4e7ef}.sample.one{background:radial-gradient(circle at 75% 30%,#d95835,transparent 30%),linear-gradient(135deg,#20121a,#411d29)}.sample.two{background:radial-gradient(circle at 72% 35%,#f4c95d,transparent 28%),linear-gradient(135deg,#122a30,#0b1119)}.sample.three{background:radial-gradient(circle at 70% 30%,#8c69ff,transparent 30%),linear-gradient(135deg,#1a1532,#10121d)}
+.cta{padding:34px;border-radius:24px;border:1px solid #f4c95d55;background:linear-gradient(110deg,#211e16,#11131b 65%);display:flex;justify-content:space-between;align-items:center;gap:22px}.cta h2{margin:0 0 8px;font-size:2rem}.cta p{color:var(--muted);margin:0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}.contact-box{border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:22px}.contact-box span{display:block;color:var(--muted);font-size:.85rem;margin-bottom:6px}.contact-box a{font-weight:700;overflow-wrap:anywhere}.contact-box a:hover{color:var(--gold)}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:780px){.hero{grid-template-columns:1fr;padding:54px 0}.artboard{min-height:320px}.cards,.portfolio{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.cta{align-items:flex-start;flex-direction:column}.navlinks{gap:12px;font-size:.82rem}.navlinks a:nth-child(2){display:none}}
+@media(max-width:420px){.navlinks{display:none}.poster{padding:16px}.shoe{font-size:5rem}.poster h2{font-size:1.55rem}.artboard{padding:18px;min-height:280px}.cta{padding:24px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav>
+    <a class="logo" href="#home">A&W <span>AGENCY</span></a>
+    <div class="navlinks"><a href="#services">Services</a><a href="#work">Our Style</a><a href="#contact">Contact</a></div>
+    <a class="btn" href="#contact">Let's Talk</a>
+  </nav>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div>
+    <div class="eyebrow"><span class="dot"></span> Creative design studio</div>
+    <h1>Design that<br><em>gets noticed.</em></h1>
+    <p class="lead">A&W Agency creates bold thumbnails, product advertisements, and social media graphics that help your brand stand out online.</p>
+    <div class="actions"><a class="btn" href="#contact">Start a Project ↗</a><a class="btn outline" href="#work">Explore our style</a></div>
+    <p class="micro">Thumbnails · Product ads · Social media creatives</p>
+  </div>
+  <div class="artboard" aria-label="Sample shoe advertisement design">
+    <div class="poster">
+      <div class="poster-top"><strong>A&W CREATIVE</strong><span class="poster-tag">SAMPLE CONCEPT</span></div>
+      <div class="shoe" aria-hidden="true">👟</div>
+      <div><h2>MAKE YOUR<br><span>MOVE.</span></h2><div class="poster-foot"><span>BUILT TO STAND OUT</span><span class="price">$19.99*</span></div></div>
+    </div>
+  </div>
+</section>
+<section id="services">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">What we do</div><h2>Creative services for your next big idea.</h2><p>Clean, attention-grabbing visuals for creators, shops, and growing brands.</p></div>
+    <div class="cards">
+      <article class="card"><div class="icon">▣</div><h3>YouTube Thumbnails</h3><p>Bold layouts, strong contrast, and clear messaging designed to make videos stand out.</p></article>
+      <article class="card"><div class="icon">✦</div><h3>Product Advertisements</h3><p>Eye-catching product graphics for footwear, fashion, beauty, and online stores.</p></article>
+      <article class="card"><div class="icon">◈</div><h3>Social Media Designs</h3><p>Promotional posts, sale graphics, and branded creatives for Instagram and Facebook.</p></article>
+    </div>
+  </div>
+</section>
+<section id="work">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Design directions</div><h2>Made to stop the scroll.</h2><p>These are illustrative style concepts. Final designs can be tailored to your product, brand, and confirmed offer.</p></div>
+    <div class="portfolio">
+      <div class="sample one"><small>A&W / THUMBNAILS</small><div><h3>BIG IDEAS.<br>BOLD STORIES.</h3><p>Creator thumbnail concept</p></div></div>
+      <div class="sample two"><small>A&W / PRODUCT ADS</small><div><h3>YOUR PRODUCT.<br>IN THE SPOTLIGHT.</h3><p>Product campaign concept</p></div></div>
+      <div class="sample three"><small>A&W / SOCIAL</small><div><h3>MAKE EVERY<br>POST COUNT.</h3><p>Social media graphic concept</p></div></div>
+    </div>
+  </div>
+</section>
+<section class="wrap">
+  <div class="cta"><div><h2>Have a project in mind?</h2><p>Tell us what you're creating. Let's make a design that fits your brand.</p></div><a class="btn" href="mailto:noltenfhdt611@gmail.com?subject=A%26W%20Agency%20Design%20Inquiry">Email A&W Agency ↗</a></div>
+</section>
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Get in touch</div><h2>Let's create something great.</h2><p>Contact A&W Agency to discuss a thumbnail, product ad, or graphic design project.</p></div>
+    <div class="contact-grid">
+      <div class="contact-box"><span>Call / WhatsApp</span><a href="tel:+923342771740">+92 334 2771740</a><p style="color:var(--muted);font-size:.85rem;margin-bottom:0">Please confirm WhatsApp is active on this number.</p></div>
+      <div class="contact-box"><span>Email</span><a href="mailto:noltenfhdt611@gmail.com">noltenfhdt611@gmail.com</a><p style="color:var(--muted);font-size:.85rem;margin-bottom:0">For project details and sample requests.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year">2026</span> A&W Agency. All rights reserved.</span><span>Creative visuals. Clear communication.</span></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
